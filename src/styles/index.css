@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-neutral-100 text-neutral-800;
+    @apply font-sans;
+  }
+
+  .dark body {
+    @apply bg-neutral-800 text-neutral-100;
+    @apply font-sans;
+  }
+}
+
+/* Custom colors for different states */
+.btn-primary {
+  @apply bg-primary-50 text-neutral-100;
+}
+
+.btn-primary:hover {
+  @apply bg-primary-60 opacity-90;
+}
+
+.btn-primary:focus {
+  @apply bg-primary-60 opacity-95;
+}
+
+.btn-primary:disabled {
+  @apply bg-primary-50 opacity-50 cursor-not-allowed;
+}
+
+.card {
+  @apply bg-primary-30 text-neutral-100;
+}
+
+.card:hover {
+  @apply bg-primary-40 opacity-90;
+}
+
+.card:focus {
+  @apply bg-primary-40 opacity-95;
+}
+
+.card:disabled {
+  @apply bg-primary-30 opacity-50 cursor-not-allowed;
+}
