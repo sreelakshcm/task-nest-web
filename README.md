@@ -1,74 +1,80 @@
 # task-management (Task Nest) - Web
 
-Task Nest is a robust task management system designed to provide a seamless user experience. This repository contains the frontend codebase built with modern web technologies.
+**Task Nest** is a task management application designed to help users efficiently manage their tasks and projects. This application leverages a modern tech stack, including React, Redux, TypeScript, Tailwind CSS, and more, to deliver a seamless and responsive user experience.
+
+## Table of Contents
+
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Folder Structure](#folder-structure)
+- [Scripts](#scripts)
+- [License](#license)
 
 ## Features
 
-- **Responsive Design:** Tailored to work on all devices with Tailwind CSS.
-- **Dark Mode:** Switch between light and dark modes.
-- **State Management:** Powered by Redux Toolkit with state persistence.
-- **Smooth Animations:** Enhances user interaction with Framer Motion.
-- **Routing:** Managed by React Router DOM for intuitive navigation.
+- **Task Management**: Create, update, and delete tasks.
+- **Project Organization**: Group tasks into projects for better organization.
+- **Dark Mode**: Toggle between light and dark themes.
+- **Persistent State**: Redux Persist to save your application state.
+- **Responsive Design**: Optimized for all devices.
 
 ## Tech Stack
 
-- **React**: ^18.3.1
-- **Redux Toolkit**: ^2.2.7
-- **Tailwind CSS**: ^3.4.10
-- **Framer Motion**: ^11.3.31
-- **React Router DOM**: ^6.26.1
-- **PostCSS**: ^8.4.41
-- **Autoprefixer**: ^10.4.20
+- **Frontend**:
+  - React: ^18.3.1
+  - Redux Toolkit: ^2.2.7
+  - React Router DOM: ^6.26.1
+  - Tailwind CSS: ^3.4.10
+  - Framer Motion: ^11.3.31
+  - TypeScript: ^5.5.3
 
-## Installation
+- **Tooling**:
+  - Vite: ^5.4.1
+  - ESLint: ^9.9.0
+  - PostCSS: ^8.4.41
+  - Autoprefixer: ^10.4.20
 
-### Prerequisites
+## Getting Started
 
-- Node.js (v16 or above)
-- npm (v8 or above)
+To get started with **taskNest**, follow these steps:
 
-### Steps
+1. **Clone the repository**:
 
-1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/sreelakshcm/task-management.git
+    cd task-management-web
+    ```
 
-   \`\`\`bash
-   git clone https://github.com/sreelakshcm/task-management.git
-   cd task-management
-   \`\`\`
+2. **Install dependencies**:
 
-2. **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-   \`\`\`bash
-   npm install
-   \`\`\`
+3. **Run the development server**:
 
-3. **Run the application:**
+    ```bash
+    npm run dev
+    ```
 
-   - **Development Mode:**
-     \`\`\`bash
-     npm run dev
-     \`\`\`
+4. **Build the application**:
 
-   - **Preview Mode:**
-     \`\`\`bash
-     npm run preview
-     \`\`\`
+    ```bash
+    npm run build
+    ```
 
-4. **Build for production:**
+5. **Preview the build**:
 
-   \`\`\`bash
-   npm run build
-   \`\`\`
+    ```bash
+    npm run preview
+    ```
 
-5. **Lint the code:**
+## Folder Structure
 
-   \`\`\`bash
-   npm run lint
-   \`\`\`
+The project structure is organized as follows:
 
-## Project Structure
-
-\`\`\`plaintext
+```plaintext
 task-management-web/
 │
 ├── src/
@@ -88,8 +94,11 @@ task-management-web/
 ├── vite.config.ts          # Vite configuration
 ├── .eslintrc.js            # ESLint configuration
 └── tsconfig.json           # TypeScript configuration
-\`\`\`
+```
 
-## Contributing
+## Scripts
 
-Contributions are welcome! Please feel free to submit a Pull Request or open an Issue.
+- **`npm run dev`**: Starts the development server using Vite.
+- **`npm run build`**: Builds the application for production.
+- **`npm run lint`**: Lints the codebase using ESLint.
+- **`npm run preview`**: Previews the production build locally.
